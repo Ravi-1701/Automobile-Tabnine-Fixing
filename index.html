@@ -10,7 +10,7 @@
         }
         header {
             background-color: #333;
-            color: white;
+            color: #fff;
             padding: 10px;
             text-align: center;
         }
@@ -27,7 +27,7 @@
             margin-right: 10px;
         }
         nav ul li a {
-            color: black;
+            color: #000;
             text-decoration: none;
         }
         main {
@@ -37,15 +37,15 @@
             margin-bottom: 20px;
         }
         h1, h2, h3 {
-            color: #333;
+            color: #33;
         }
         img {
-            max-width: 100%;
+            max-width: 10%;
             height: auto;
         }
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #33;
+            color: #fff;
             padding: 10px;
             text-align: center;
         }
@@ -57,11 +57,11 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#automobiles">Automobiles</a></li>
-            <li><a href="#booking">Vehicle Booking</a></li>
-            <li><a href="#appointment">Tour Appointment</a></li>
+            <li><a href="#home" id="home-link">Home</a></li>
+            <li><a href="#about" id="about-link">About Us</a></li>
+            <li><a href="#automobiles" id="automobiles-link">Automobiles</a></li>
+            <li><a href="#booking" id="booking-link">Vehicle Booking</a></li>
+            <li><a href="#appointment" id="appointment-link">Tour Appointment</a></li>
         </ul>
     </nav>
     <main>
@@ -77,29 +77,29 @@
             <h2>Automobiles</h2>
             <p>Explore our wide range of cars and find the perfect one for you:</p>
             <ul>
-                <li><a href="#">Car 1</a></li>
-                <li><a href="#">Car 2</a></li>
-                <li><a href="#">Car 3</a></li>
-                <li><a href="#">Car 4</a></li>
-                <li><a href="#">Car 5</a></li>
+                <li><a href="#" id="car1-link">Car 1</a></li>
+                <li><a href="#" id="car2-link">Car 2</a></li>
+                <li><a href="#" id="car3-link">Car 3</a></li>
+                <li><a href="#" id="car4-link">Car 4</a></li>
+                <li><a href="#" id="car5-link">Car 5</a></li>
             </ul>
-            <img src="car1.jpg" alt="Car 1">
-            <img src="car2.jpg" alt="Car 2">
-            <img src="car3.jpg" alt="Car 3">
-            <img src="car4.jpg" alt="Car 4">
-            <img src="car5.jpg" alt="Car 5">
+            <img src="car1.jpg" alt="Car 1" id="car1-img">
+            <img src="car2.jpg" alt="Car 2" id="car2-img">
+            <img src="car3.jpg" alt="Car 3" id="car3-img">
+            <img src="car4.jpg" alt="Car 4" id="car4-img">
+            <img src="car5.jpg" alt="Car 5" id="car5-img">
         </section>
         <section id="booking">
             <h2>Vehicle Booking</h2>
             <p>Book your dream car now:</p>
             <form>
-                <label for="name">Name:</label>
+                <label for="name" id="name-label">Name:</label>
                 <input type="text" id="name" name="name" required="">
-                <label for="email">Email:</label>
+                <label for="email" id="email-label">Email:</label>
                 <input type="email" id="email" name="email" required="">
-                <label for="phone">Phone:</label>
+                <label for="phone" id="phone-label">Phone:</label>
                 <input type="tel" id="phone" name="phone" required="">
-                <label for="car">Car:</label>
+                <label for="car" id="car-label">Car:</label>
                 <select id="car" name="car">
                     <option value="car1">Car 1</option>
                     <option value="car2">Car 2</option>
@@ -107,24 +107,24 @@
                     <option value="car4">Car 4</option>
                     <option value="car5">Car 5</option>
                 </select><br>
-                <label for="date">Booking Date:</label>
+                <label for="date" id="date-label">Booking Date:</label>
                 <input type="date" id="date" name="date" required="">
-                <input type="submit" value="Book Now">
+                <input type="submit" value="Book Now" id="book-now-btn">
             </form>
         </section>
         <section id="appointment">
             <h2>Tour Appointment</h2>
             <p>Schedule your tour now:</p>
             <form>
-                <label for="name">Name:</label>
+                <label for="name" id="name-label">Name:</label>
                 <input type="text" id="name" name="name" required="">
-                <label for="email">Email:</label>
+                <label for="email" id="email-label">Email:</label>
                 <input type="email" id="email" name="email" required="">
-                <label for="phone">Phone:</label>
+                <label for="phone" id="phone-label">Phone:</label>
                 <input type="tel" id="phone" name="phone" required="">
-                <label for="date">Appointment Date:</label>
+                <label for="date" id="date-label">Appointment Date:</label>
                 <input type="date" id="date" name="date" required="">
-                <input type="submit" value="Schedule Now">
+                <input type="submit" value="Schedule Now" id="schedule-now-btn">
             </form>
         </section>
     </main>
